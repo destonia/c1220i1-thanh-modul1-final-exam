@@ -9,14 +9,15 @@
 </body>
 <script>
     let i;
-    let flag=0;
+    let flag = 0;
     let fib = [];
     fib[0] = 0;
     fib[1] = 1;
     for (i = 2; i <= 255; i++) {
         fib[i] = fib[i - 2] + fib[i - 1];
     }
-    isFibonacci(0);
+    let number=+prompt("nhập 1 số nguyên bất kỳ: ")
+    //isFibonacci(0);
     function isFibonacci(number) {
         for (let j = 0; j < fib.length; j++) {
             if (number === fib[j]) {
@@ -24,11 +25,14 @@
                 break;
             }
         }
-        if (flag===1){
+        if (flag === 1) {
             return true;
+        } else {
+            return false;
         }
     }
 
+    document.write(isFibonacci(610))
 
 </script>
 </html>
