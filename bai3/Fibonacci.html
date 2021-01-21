@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isFibonacci(number){
+        let i;
+        let fib = [];
+        fib[0] = 0;
+        fib[1] = 1;
+        for (i = 2; i <= number; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+        for (let j=0;j<fib.length;j++){
+            if (number===fib[j]){
+                return true;
+            }else {
+                return false;
+            }
+            }
+        }
+    }
+    /*unction isFibonacci(fib, count) {
+        let x = prompt('nhập số: ');
+        let a = 0;
+        let b = 1;
+        count=0
+        for (let i = 0; i < x; i++) {
+            fib = a + b;
+            a = b;
+            b = fib;
+            if (x === fib) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            console.log('true');
+        } else {
+            console.log('false');
+        }
+    }*/
+    isFibonacci(0);
+</script>
+</html>
